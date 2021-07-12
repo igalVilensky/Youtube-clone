@@ -6,25 +6,31 @@ import VideoCallIcon from "@material-ui/icons/VideoCall";
 import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
+import MicIcon from "@material-ui/icons/Mic";
 function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <MenuIcon />
+        <MenuIcon className="menu__icon" />
         <img
           className="header__logo"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/512px-YouTube_Logo_2017.svg.png"
         ></img>
       </div>
       <div className="header__input">
-        <input placeholder="Search" type="text"></input>
-        <SearchIcon className="header__inputButton" />
+        <div className="header__input__searchIcon">
+          <input placeholder="Search" type="text"></input>
+          <SearchIcon className="header__inputButton" />
+        </div>
+        <MicIcon className="header__input__micIcon" />
       </div>
+
       <div className="header__icons">
         <VideoCallIcon className="header__icon" />
         <AppsIcon className="header__icon" />
         <NotificationsIcon className="header__icon" />
         <Avatar
+          className="header__icon"
           alt="Me"
           src="https://lh3.googleusercontent.com/ogw/ADea4I7XmwLlVfUlKeNrwTlkzHLxTYTIkC-SRO6lsv-16w=s83-c-mo"
         />
