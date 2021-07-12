@@ -24,27 +24,32 @@
   .header__input {
     display: flex;
     align-items: center;
-    /* justify-content: flex-end; */
-
-    width: 640px;
-    border: 1px solid lightgray;
+    margin-left: 55px;
+    width: 700px;
 
     .header__input__searchIcon {
       flex: 1;
-      /* border: 1px solid red; */
+      border: 1px solid lightgray;
       display: flex;
       align-items: center;
       & input {
         height: 30px;
         width: 100%;
         border: none;
+        font-size: 16px;
+        padding-left: 10px;
         /*   background-color: rgb(188, 255, 182); */
+        &::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          padding-left: 3px;
+          font-size: 16px;
+        }
         &:focus {
-          outline: none;
+          outline: indianred;
         }
       }
       a {
-        width: 13%;
+        width: 12%;
         height: 30px;
         display: flex;
         align-items: center;

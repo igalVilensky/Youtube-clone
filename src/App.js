@@ -1,16 +1,21 @@
 import "./App.scss";
 import Header from "./header/Header";
 import Sidebar from "./sidebar/Sidebar";
+import SearchPage from "./searchPage/SearchPage";
 import RecommendedVideos from "./RecommendedVideos/RecommendedVideos";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Header />
+
         <Switch>
           <Route path="/search/:searchTerm">
-            <h1>Search page</h1>
+            <div className="app__page">
+              <Sidebar />
+              <SearchPage />
+            </div>
           </Route>
           <Route path="/">
             <div className="app__page">
