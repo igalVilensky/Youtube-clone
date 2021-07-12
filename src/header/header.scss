@@ -7,9 +7,11 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  position: relative;
-  /*   background-color: rgb(53, 255, 46); */
+  /*  position: relative; */
+  background-color: white;
   .header__left {
+    /*  min-width: 30%; */
+    display: flex;
     .menu__icon {
       margin-left: 5px;
     }
@@ -53,6 +55,7 @@
   }
   .header__icon {
     margin-right: 30px;
+    cursor: pointer;
     &:nth-child(4) {
       margin-right: 20px;
     }

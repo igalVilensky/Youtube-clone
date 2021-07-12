@@ -1,4 +1,11 @@
 .sidebar {
   flex: 0.125;
   /* background-color: violet; */
+  margin-top: 10px;
+  & > hr {
+    height: 1px;
+    border: 0;
+    background-color: lightgrey;
+    margin: 10px 0;
+  }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.scss";
 import MenuIcon from "@material-ui/icons/MenuSharp";
 import SearchIcon from "@material-ui/icons/Search";
@@ -7,20 +7,32 @@ import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
 import MicIcon from "@material-ui/icons/Mic";
+import { Link } from "react-router-dom";
 function Header() {
+  const [inputSearch, setInputSearch] = useState("");
+
   return (
     <div className="header">
       <div className="header__left">
         <MenuIcon className="menu__icon" />
-        <img
-          className="header__logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/512px-YouTube_Logo_2017.svg.png"
-        ></img>
+        <Link to="/">
+          <img
+            className="header__logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/512px-YouTube_Logo_2017.svg.png"
+          ></img>
+        </Link>
       </div>
       <div className="header__input">
         <div className="header__input__searchIcon">
-          <input placeholder="Search" type="text"></input>
-          <SearchIcon className="header__inputButton" />
+          <input
+            onChange={(e) => setInputSearch(e.target.value)}
+            value={inputSearch}
+            placeholder="Search"
+            type="text"
+          ></input>
+          <Link to={`/search/${inputSearch}`}>
+            <SearchIcon className="header__inputButton" />
+          </Link>
         </div>
         <MicIcon className="header__input__micIcon" />
       </div>
@@ -32,7 +44,7 @@ function Header() {
         <Avatar
           className="header__icon"
           alt="Me"
-          src="https://lh3.googleusercontent.com/ogw/ADea4I7XmwLlVfUlKeNrwTlkzHLxTYTIkC-SRO6lsv-16w=s83-c-mo"
+          src="https://yt3.ggpht.com/yti/APfAmoH0fn0MXtqS9WtxWp-PXRdK-5-v131rBthlXr88IQ=s88-c-k-c0x00ffffff-no-rj-mo"
         />
       </div>
     </div>
