@@ -10,7 +10,9 @@ import MicIcon from "@material-ui/icons/Mic";
 import { Link } from "react-router-dom";
 function Header() {
   const [inputSearch, setInputSearch] = useState("");
-
+  function handleClick() {
+    setInputSearch("");
+  }
   return (
     <div className="header">
       <div className="header__left">
@@ -31,10 +33,12 @@ function Header() {
             type="text"
           ></input>
           <Link to={`/search/${inputSearch}`}>
-            <SearchIcon className="header__inputButton" />
+            <SearchIcon onClick={handleClick} className="header__inputButton" />
           </Link>
         </div>
-        <MicIcon className="header__input__micIcon" />
+        <div className="micIconContainer">
+          <MicIcon className="header__input__micIcon" />
+        </div>
       </div>
 
       <div className="header__icons">
