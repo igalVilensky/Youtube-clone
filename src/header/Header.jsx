@@ -19,6 +19,7 @@ function Header() {
         <MenuIcon className="menu__icon" />
         <Link to="/">
           <img
+            title="YouTobe Home"
             className="header__logo"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/512px-YouTube_Logo_2017.svg.png"
           ></img>
@@ -32,19 +33,25 @@ function Header() {
             placeholder="Search"
             type="text"
           ></input>
-          <Link to={`/search/${inputSearch}`}>
+          <Link title="Search" to={`/search/${inputSearch}`}>
             <SearchIcon onClick={handleClick} className="header__inputButton" />
           </Link>
         </div>
-        <div className="micIconContainer">
+        <div title="Search with your voice" className="micIconContainer">
           <MicIcon className="header__input__micIcon" />
         </div>
       </div>
 
       <div className="header__icons">
-        <VideoCallIcon className="header__icon" />
-        <AppsIcon className="header__icon" />
-        <NotificationsIcon className="header__icon" />
+        <div title="Create" className="videoCallWrap">
+          <VideoCallIcon className="header__icon" />
+        </div>
+        <div title="YouTube apps" className="appsIconWrap">
+          <AppsIcon className="header__icon" />
+        </div>
+        <div title="Notifications" className="notIconWrap">
+          <NotificationsIcon className="header__icon" />
+        </div>
         <Avatar
           className="header__icon"
           alt="Me"
