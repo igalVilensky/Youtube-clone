@@ -17,11 +17,55 @@ export default function SearchPage() {
         verified
         subs="154K"
         noOfVideos={382}
-        description="🍀 Music for relaxation, meditation, study, reading, massage, spa or sleep. This music is perfect for fighting anxiety, stress or insomnia as it helps you relax and get rid of bad vibrations."
+        description="🍀 Music for relaxation, meditation, study, reading, massage, spa or sleep. This music is perfect for fighting anxiety..."
       />
 
       <hr />
-      <VideoRow />
+      <VideoRow
+        views="2.2M"
+        subs="240K"
+        description="🍀 Music for relaxation, meditation, study, reading, massage, spa or sleep. This music is perfect for fighting anxiety..."
+        timestamp="5 days ago"
+        channel="Learning like a Pro"
+        title="Welcome to the channel!"
+        image="https://i.ytimg.com/vi/J3sZI-H7OEM/hq720_live.jpg?sqp=CPTFtYcG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7JNEe9WuUITa8bV-5Jbz6ttZbbw"
+      />
+      <VideoRow
+        views="2.2M"
+        subs="240K"
+        description="🍀 Music for relaxation, meditation, study, reading, massage, spa or sleep. This music is perfect for fighting anxiety..."
+        timestamp="5 days ago"
+        channel="Learning like a Pro"
+        title="Welcome to the channel!"
+        image="https://i.ytimg.com/vi/J3sZI-H7OEM/hq720_live.jpg?sqp=CPTFtYcG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7JNEe9WuUITa8bV-5Jbz6ttZbbw"
+      />
+      <VideoRow
+        views="2.2M"
+        subs="240K"
+        description="🍀 Music for relaxation, meditation, study, reading, massage, spa or sleep. This music is perfect for fighting anxiety..."
+        timestamp="5 days ago"
+        channel="Learning like a Pro"
+        title="Welcome to the channel!"
+        image="https://i.ytimg.com/vi/J3sZI-H7OEM/hq720_live.jpg?sqp=CPTFtYcG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7JNEe9WuUITa8bV-5Jbz6ttZbbw"
+      />
+      <VideoRow
+        views="2.2M"
+        subs="240K"
+        description="🍀 Music for relaxation, meditation, study, reading, massage, spa or sleep. This music is perfect for fighting anxiety..."
+        timestamp="5 days ago"
+        channel="Learning like a Pro"
+        title="Welcome to the channel!"
+        image="https://i.ytimg.com/vi/J3sZI-H7OEM/hq720_live.jpg?sqp=CPTFtYcG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7JNEe9WuUITa8bV-5Jbz6ttZbbw"
+      />
+      <VideoRow
+        views="2.2M"
+        subs="240K"
+        description="🍀 Music for relaxation, meditation, study, reading, massage, spa or sleep. This music is perfect for fighting anxiety..."
+        timestamp="5 days ago"
+        channel="Learning like a Pro"
+        title="Welcome to the channel!"
+        image="https://i.ytimg.com/vi/J3sZI-H7OEM/hq720_live.jpg?sqp=CPTFtYcG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7JNEe9WuUITa8bV-5Jbz6ttZbbw"
+      />
     </div>
   );
 }

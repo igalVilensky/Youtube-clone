@@ -1,7 +1,10 @@
 .channelRow {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 65%;
+
+  position: relative;
+  left: 265px;
   .channelRow__text {
     display: flex;
     flex-direction: column;

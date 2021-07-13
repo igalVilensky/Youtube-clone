@@ -2,14 +2,14 @@
   flex: 0.875;
   background-color: #f9f9f9;
   padding: 20px 20px;
-  /*  
-  
-  padding-bottom: 0;
-  transition: all 1s ease; */
+  position: relative;
   .searchPage__filter {
     display: flex;
     align-items: center;
     color: #606060;
+    position: relative;
+    left: 265px;
+    width: 50%;
     svg {
       font-size: 23px;
       &:hover {
@@ -22,7 +22,10 @@
     font-size: 15.5px;
   }
   hr {
+    position: relative;
+    left: 265px;
     height: 1px;
+    width: 65%;
     border: 0;
     background-color: lightgrey;
     margin-top: 10px;
