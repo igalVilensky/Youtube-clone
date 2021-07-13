@@ -1,8 +1,7 @@
 .sidebarRow {
-  /*   background-color: rgb(124, 189, 151); */
   display: flex;
   align-items: center;
-  padding: 10px 25px;
+  padding: 8px 25px;
   &:hover {
     background-color: lightgrey;
     cursor: pointer;
@@ -11,7 +10,6 @@
     color: red;
   }
   &:hover > .sidebarRow__title {
-    /* font-weight: bold; */
   }
   .sidebarRow__icon {
     color: grey;
@@ -32,5 +30,5 @@
   color: red;
 }
 .sidebarRow.selected > .sidebarRow__title {
-  font-weight: bold;
+  /*  font-weight: bold; */
 }

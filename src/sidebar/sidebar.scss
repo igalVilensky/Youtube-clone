@@ -2,6 +2,11 @@
   flex: 0.125;
   /* background-color: violet; */
   margin-top: 10px;
+  .sidebar__subscriptions__title {
+    font-size: 14px;
+    color: #606060;
+    padding: 10px 20px;
+  }
   & > hr {
     height: 1px;
     border: 0;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./header.scss";
 import MenuIcon from "@material-ui/icons/MenuSharp";
 import SearchIcon from "@material-ui/icons/Search";
@@ -8,7 +8,32 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
 import MicIcon from "@material-ui/icons/Mic";
 import { Link } from "react-router-dom";
+
+function useKey(key, cb) {
+  const callbackRef = useRef(cb);
+  useEffect(() => {
+    callbackRef.current = cb;
+  });
+  useEffect(() => {
+    function handle(e) {
+      if (e.code === key) {
+        callbackRef.current(e);
+      }
+    }
+    document.addEventListener("keypress", handle);
+    return () => {
+      document.removeEventListener("keypress", handle);
+    };
+  }, [key]);
+}
+
 function Header() {
+  function handleEnter() {
+    console.log("enter key");
+    handleClick();
+  }
+
+  useKey("Enter", handleEnter);
   const [inputSearch, setInputSearch] = useState("");
   function handleClick() {
     setInputSearch("");

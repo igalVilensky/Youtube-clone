@@ -1,7 +1,7 @@
 import React from "react";
 import "./sidebar.scss";
 import SidebarRow from "../SidebarRow/SidebarRow";
-/* import WhatshotIcon from "@material-ui/icons/Whatshot"; */
+import Subscriptions from "../subscriptions/Subscriptions";
 import ExploreIcon from "@material-ui/icons/Explore";
 import HomeIcon from "@material-ui/icons/Home";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
@@ -11,8 +11,12 @@ import OndemandVideoIcon from "@material-ui/icons/OndemandVideo";
 import WhatchLaterIcon from "@material-ui/icons/WatchLater";
 import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAltOutlined";
 import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
+import { Avatar } from "@material-ui/core";
 
 export default function Sidebar() {
+  /*   const userPic = {
+
+  } */
   return (
     <div className="sidebar">
       <SidebarRow selected Icon={HomeIcon} title="Home" />
@@ -26,6 +30,17 @@ export default function Sidebar() {
       <SidebarRow Icon={ThumbUpAltOutlinedIcon} title="Liked videos" />
       <SidebarRow Icon={ExpandMoreOutlinedIcon} title="Show more" />
       <hr />
+      <h2 className="sidebar__subscriptions__title">SUBSCRIPTIONS</h2>
+      <Subscriptions Icon={Avatar} title="Joma Tech" />
+
+      <Subscriptions Icon={Avatar} title="Joma Tech" />
+      <Subscriptions Icon={Avatar} title="Joma Tech" />
+      <Subscriptions Icon={Avatar} title="Joma Tech" />
+      <Subscriptions Icon={Avatar} title="Joma Tech" />
+      <Subscriptions Icon={Avatar} title="Joma dsada" />
+      <Subscriptions Icon={Avatar} title="Joma Tech" />
+      <Subscriptions Icon={Avatar} title="Joma Tech" />
+      <Subscriptions Icon={ExpandMoreOutlinedIcon} title="Show 685 more" />
     </div>
   );
 }
