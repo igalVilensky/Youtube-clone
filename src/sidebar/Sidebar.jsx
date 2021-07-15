@@ -40,6 +40,9 @@ export default function Sidebar() {
       <Subscriptions Icon={Avatar} title="Joma dsada" />
       <Subscriptions Icon={Avatar} title="Joma Tech" />
       <Subscriptions Icon={Avatar} title="Joma Tech" />
+      <Subscriptions Icon={Avatar} title="Joma Tech" />
+      <Subscriptions Icon={Avatar} title="Joma Tech" />
+      <Subscriptions Icon={Avatar} title="Joma Tech" />
       <Subscriptions Icon={ExpandMoreOutlinedIcon} title="Show 685 more" />
     </div>
   );

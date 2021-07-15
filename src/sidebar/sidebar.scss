@@ -1,7 +1,10 @@
 .sidebar {
   flex: 0.125;
-  /* background-color: violet; */
+
   margin-top: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
   .sidebar__subscriptions__title {
     font-size: 14px;
     color: #606060;
