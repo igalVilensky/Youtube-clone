@@ -1,9 +1,9 @@
 .sidebar {
   flex: 0.125;
-
+  height: 100vh;
   margin-top: 10px;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   .sidebar__subscriptions__title {
     font-size: 14px;
